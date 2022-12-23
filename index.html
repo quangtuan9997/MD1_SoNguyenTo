@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = +prompt('nhap so nguyen to');
+    let count = 0;
+    for (let snt = 2; count < number; snt++) {
+        let check=true;
+        for (let i = 2; i < snt; i++) {
+            if (snt % i == 0) {
+                check=false;
+            }
+        }
+        if (check){
+            count++;
+            document.write(snt + '   ')
+        }
+
+    }
+
+</script>
+</body>
+</html>
